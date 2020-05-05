@@ -30,7 +30,7 @@ app.use(cors())
 app.use('/api/users', users)
 app.use('/api/auth', auth)
 
-const port = process.env.PORT || 3000
+const port = process.env.PORT || 3010
 
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static('client/build'))
