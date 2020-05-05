@@ -10,7 +10,7 @@ import Ingredient from './components/Ingredient'
 import Calender from './components/Calender/src/components/Cal'
 import Login from './components/pages/Login/login'
 import signup from './components/pages/signup/signup'
-import { createBrowserHistory } from 'history'
+// import { createBrowserHistory } from 'history'
 import { Provider } from 'react-redux'
 import { loadUser } from './actions/authActions'
 import store from './components/store'
@@ -20,10 +20,11 @@ const App = () => {
     store.dispatch(loadUser())
   }, [])
 
-  const browserHistory = createBrowserHistory()
+  // const browserHistory = createBrowserHistory()
 
   return (
-    <Router history={browserHistory}>
+    // <Router history={browserHistory}>
+    <Router>
       <Provider store={store}>
         <div className='App'>
           <Nav />
