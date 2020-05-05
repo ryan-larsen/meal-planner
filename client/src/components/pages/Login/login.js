@@ -78,6 +78,7 @@ onSubmit = e => {
         value={this.state.password}
            onChange={this.onChange}
             required />
+            <br />
         <input className='submitButton' type='submit' value='Submit'/>
         <br />
         <Link to='/signup'>Don't have an account?</Link>
