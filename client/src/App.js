@@ -27,12 +27,12 @@ const App = () => {
       <Provider store={store}>
         <div className='App'>
           <Nav />
-          <Route path='/' component={Login} />
-          <Route path='/signup' component={signup} />
-          <Route path='/About' component={About} />
-          <Route path='/recipes' component={Recipes} />
-          <Route path='/ingredients/:label' component={Ingredient} />
-          <Route path='/Calender' component={Calender} />
+          <Route exact path='/' component={Login} />
+          <Route exact path='/signup' component={signup} />
+          <Route exact path='/About' component={About} />
+          <Route exact path='/recipes' component={Recipes} />
+          <Route exact path='/ingredients/:label' component={Ingredient} />
+          <Route exact path='/Calender' component={Calender} />
         </div>
       </Provider>
     </Router>
